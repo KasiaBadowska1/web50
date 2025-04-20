@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .top_right_links {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .search {
+            text-align: center;
+        }
+        .search_bar {
+            width: 400px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 25px;
+        }
+        .search_button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Those are links to Image Search and Advanced Search -->
+    <div class="top_right_links">
+        <a href="image_search.html">Image Search</a>
+        <a href="advanced_search.html">Advanced Search</a>
+    </div>
+    <!-- This is the google search form -->
+    <form action="https://www.google.com/search">
+        <div class="search">
+            <input type="text" name="q" class="search_bar"><br />
+            <input type="submit" value="Google Search" class="search_button">
+            <input type="submit" name="btnI" value="I'm Feeling Lucky" class="search_button">
+        </div>
+
+    </form>
+</body>
+</html>

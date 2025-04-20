@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced Search</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        .top_right_link {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        h1 {
+            font-weight: normal;
+        }
+
+        .form-container {
+            max-width: 600px;
+        }
+
+        .form-row {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        .search-button {
+            background-color: #4d90fe;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <!-- This is the link to the main Google Search page -->
+    <a href="index.html" class="top_right_link">Google Search</a>
+    <!-- This is the google advanced search form -->
+    <div class="form-container">
+        <h1>Advanced Search</h1>
+        <form action="https://www.google.com/search" method="GET">
+            <div class="form-row">
+                <label for="all">Find pages with… “all these words:”</label>
+                <input type="text" id="all" name="as_q">
+            </div>
+            <div class="form-row">
+                <label for="exact">Find pages with… “this exact word or phrase:”</label>
+                <input type="text" id="exact" name="as_epq">
+            </div>
+            <div class="form-row">
+                <label for="any">Find pages with… “any of these words:”</label>
+                <input type="text" id="any" name="as_oq">
+            </div>
+            <div class="form-row">
+                <label for="none">Find pages with… “none of these words:”</label>
+                <input type="text" id="none" name="as_eq">
+            </div>
+            <input type="submit" value="Advanced Search" class="search-button">
+        </form>
+    </div>
+</body>
+</html>

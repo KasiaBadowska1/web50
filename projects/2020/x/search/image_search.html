@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Search</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .top_right_link {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .search {
+            text-align: center;
+        }
+
+        .search_bar {
+            width: 400px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 25px;
+        }
+
+        .search_button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- This is the link to the main Google Search page -->
+    <a href="index.html" class="top_right_link">Google Search</a>
+    <!-- This is the google image search form -->
+    <form method="get" action="http://images.google.com/images">
+        <div class="search">
+            <input type="text" name="q" class="search_bar"><br />
+            <input type="submit" value="Image Search" class="search_button">
+        </div>
+    </form>
+</body>
+</html>
